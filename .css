@@ -1,0 +1,133 @@
+html{
+	overflow: hidden;
+}
+
+body{
+	background-color: #090e14;
+	margin: 0;
+	fontsize: 26px;
+	font-family: 'helvetica';
+	color: #f0f0f0;
+	height: 100vh;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x:hidden;
+	overflow-y: auto;
+	z-index: 2;
+}
+.parallax-wrapper {
+	width: 100vw;
+	height:100vh;
+	padding-top:20vh;
+	box-sizing: border-box;
+	z-index: 2;
+}
+.frontwave2{
+	width: 100vw;
+	height:100vh;
+	padding-top:5vh;
+	z-index: 7;
+}
+.parallax-wrapper::before{
+	content:"";
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left:0;
+	background-image: url("blackice.png");
+	position: absolute;
+	z-index: -2;
+	transform:translateZ(-3px) scale(4);
+}
+.leaf-wrapper{
+	width: 100vw;
+	min-height:100vh;
+	padding-top:20vh;
+	padding-bottom:10vw;
+	background-image: url("leafy.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: repeat;
+	box-sizing: border-box;
+	z-index: 2;
+	position: relative;
+}
+.wave-wrapper {
+	z-index: -2;
+	position: relative;
+	transform:translateZ(-1px) scale(2);
+}
+.noise-wrapper {
+	width: 100vw;
+	min-height:100vh;
+	padding-top:20vh;
+	padding-bottom:10vw;
+	background-image: url("topo.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: repeat;
+	box-sizing: border-box;
+	z-index: 2;
+	position: relative;
+}
+.classical-wrapper {
+	width: 100vw;
+	min-height:100vh;
+	padding-top:20vh;
+	padding-bottom:10vw;
+	background-image: url("marble.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: repeat;
+	box-sizing: border-box;
+	z-index: 2;
+	position: relative;
+}
+.modern-wrapper {
+	width: 100vw;
+	min-height:100vh;
+	padding-top:20vh;
+	padding-bottom:10vw;
+	background-image: url("wave1.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: repeat;
+	box-sizing: border-box;
+	z-index: 2;
+	position: relative;
+}
+.end-wrapper {
+	text-align: center;
+	font-family: serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0;
+	background: #141414;
+	z-index:2;
+	fontsize: 10px;
+}
+.center{  
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	}
+.center2{  
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	}
+.content {
+	margin: 0 auto;
+	padding: 50px;
+	width: 50%;
+	background: #141414;
+	z-index:2;
+}
+.content2 {
+	margin: 0 auto;
+	padding: 50px;
+	width: 50%;
+	background: #101010;
+}
